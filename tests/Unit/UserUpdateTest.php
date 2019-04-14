@@ -8,7 +8,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use App\User;
 
 
-class UserInsertTest extends TestCase
+class UserUpdateTest extends TestCase
 {
     /**
      * A basic unit test example.
@@ -16,14 +16,14 @@ class UserInsertTest extends TestCase
      * @return void
      */
 
-
     /** @test */
-    public function userinserttest()
+    public function userupdatetest()
     {
-        $user = new User();
-        $user->name = "Chandu2";
-        $user->email = "testemail5";
-        $user->password = "testpassword5";
+        $user = User::find(5);
+
+        $user->name = 'Steve Smith';
+
         $this->assertTrue($user->save());
+
     }
 }

@@ -3,19 +3,18 @@
 namespace Tests\Feature;
 
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class ContactTest extends TestCase
 {
     /**
-     * A basic feature test example.
+     * A basic test example.
      *
      * @return void
      */
-    public function testContactTest()
+    public function testContactPage()
     {
-        $response = $this->get('/contact');
+        $response = $this->get('/');
 
         $response->assertStatus(200);
     }
