@@ -17,8 +17,8 @@ use Faker\Generator as Faker;
 
 $factory->define(Car::class, function (Faker $faker) {
     return [
-        'Make' => $faker->randomElement(['ford','honda','toyota']),
-        'Model' => $faker->unique()->model,
+        'Model' => $faker->randomElement(['Ford','Toyota','Honda']),
+        'Make' => $faker->randomElement(['model1', 'model2', 'model3']),
         'year' => $faker->year,
     ];
 });

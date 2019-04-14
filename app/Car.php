@@ -10,5 +10,4 @@ class Car extends Model
         'Make', 'Model', 'year',
     ];
 
-
 }
